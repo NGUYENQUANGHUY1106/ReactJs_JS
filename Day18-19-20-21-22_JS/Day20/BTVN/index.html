@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main" style="display: flex; align-items: center; justify-content: center;">
+        <div class="content">
+            <h2>Thêm Công Việc</h2>
+            <div class="add_work">
+                <input type="text" placeholder="Nhập công việc...." id="input_work">
+            </div>
+            <div class="main_stautus">
+                <p>Status:</p>
+                <input type="radio" name="status" value="Todo"> Todo
+                <input type="radio" name="status" value="Done"> Done
+                <input type="radio" name="status" value="Doing"> Doing
+                <input type="radio" name="status" value="Resolved"> Resolved
+                <input type="radio" name="status" value="Reopen"> Reopen
+
+            </div>
+            <div class="btn">
+                <button onclick="HandleSubmit()" id="btn_add">Thêm</button>
+                 <button id="btn-clear">Clear</button>
+            </div>
+            <div class="fotter">
+                <div class="show_data">
+                    <div class="sub">
+                        Đi chơi net
+                     </div>
+                     <div class="btn_status">
+                        <button class="btn-sub">Todo</button>
+                     </div>
+                     <div class="task">
+                        <button class="edit_btn">Sửa</button>
+                        <button class="delete_btn">Xóa</button>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="/Day18-19-20-21-22_JS/Day20/BTVN/main.js"></script>
+</body>
+</html>

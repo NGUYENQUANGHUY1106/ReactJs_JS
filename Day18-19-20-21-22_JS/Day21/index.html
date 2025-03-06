@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Day18-19-20-21-22_JS/Day21/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div>
+        <h1>Thêm Công Việc</h1>
+        <div class="input-gr">
+          <input type="text" placeholder="Thêm Công việc" id="title" />
+          <select value="">
+            <option name="" id="">All</option>
+            <option name="" id="">Todo</option>
+            <option name="" id="">Done</option>
+            <option name="" id="">Doing</option>
+            <option name="" id="">Resolved</option>
+            <option name="" id="">Reopen</option></select
+          ><br />
+        </div>
+        <p id="errWork" style="color: red; font-size: 20px; display: none">
+          Bạn không được bỏ trống công việc
+        </p>
+        <div class="status">
+          <label for="">Status: </label>
+          <label for="Todo"
+            ><input
+              id="Todo"
+              type="radio"
+              name="status"
+              value="Todo"
+            />Todo</label
+          >
+          <label for="Done"
+            ><input
+              id="Done"
+              type="radio"
+              name="status"
+              value="Done"
+            />Done</label
+          >
+          <label for="Doing"
+            ><input
+              id="Doing"
+              type="radio"
+              name="status"
+              value="Doing"
+            />Doing</label
+          >
+          <label for="Resolved"
+            ><input
+              id="Resolved"
+              type="radio"
+              name="status"
+              value="Resolved"
+            />Resolve</label
+          >
+          <label for="Reopen"
+            ><input
+              id="Reopen"
+              type="radio"
+              name="status"
+              value="Reopen"
+            />Reopen</label
+          >
+        </div>
+        <p id="errStatus" style="color: red; font-size: 20px; display: none">
+          Bạn không được bỏ trống status
+        </p>
+
+        <div class="btn-group">
+          <button id="btnSubmit" class="btn-add" onclick="handleSubmit()">Thêm</button>
+          <button class="btn-clear" onclick="clear()">Clear</button>
+        </div>
+        <div id="workconiner">
+          <div class="list_todo">
+     
+          </div>
+          <p
+            id="noData"
+            style="text-align: center; font-size: 20px; color: white"
+          >
+            No Data
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="/Day18-19-20-21-22_JS/Day21/main.js"></script>
+  </body>
+</html>

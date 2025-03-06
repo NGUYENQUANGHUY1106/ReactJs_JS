@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Day18-19-20-21-22_JS/Day18-19/main.js" />
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>Thông Tin</h1>
+      <div>
+        <p>Id</p>
+        <input type="text" id="id" disabled />
+      </div>
+      <div>
+        <p>Name</p>
+        <input type="text" id="username" />
+      </div>
+      <div>
+        <div>
+          <p>Avatar</p>
+          <input type="file" id="image" />
+          <img style="width: 150px; " src="" id="showimage" alt="">
+        </div>
+        <button class="delete_img">Delete</button>
+      </div>
+
+      <div>
+        <p>Salary</p>
+        <input type="text" id="salary" />
+      </div>
+      <div>
+        <p>Description</p>
+        <textarea name="" id="description" cols="40" rows="10"></textarea>
+      </div>
+      <div>
+        <p>Gender</p>
+        <input type="radio" name="gender" value="Male" /> Male
+        <input type="radio" name="gender" value="Female" /> Female
+        <input type="radio" name="gender" value="Other" /> Other
+      </div>
+      <div>
+        <p>Married</p>
+        <input type="radio" name="married" value="Đã Kết Hôn" /> Yes
+        <input type="radio" name="married" value="Chưa  Kết Hôn" /> No
+      </div>
+      <input type="checkbox" checked>
+      <div>
+        <p>Education</p>
+        <select id="education">
+          <option value=""></option>
+          <option value="1 Năm">1 Năm</option>
+          <option value="2 Năm">2 Năm</option>
+          <option value=" 3 Năm">3 Năm</option>
+          <option value="4 năm">4 Năm</option>
+          <option value="5 Năm">5 Năm</option>
+        </select>
+      </div>
+      <div>
+        <button id="btnSubmit" onclick="handleSumit()" >Thêm</button>
+        <button style="display: none;" id="btnDelete" onclick="handleDeleteFormCheckBox()" >Xóa</button>
+
+        <button>Clear Data</button>
+      </div>
+      <div>
+        <table border="1">
+          <thead>
+            <th>All <input  type="checkbox" name="" id="checkAll"></th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Avatar</th>
+            <th>Salary</th>
+            <th>Description</th>
+            <th>Gender</th>
+            <th>Married</th>
+            <th>Education</th>
+            <th>Action</th>
+          </thead>
+          <tbody>
+           
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="/Day18-19-20-21-22_JS/main.js"></script>
+  </body>
+</html>

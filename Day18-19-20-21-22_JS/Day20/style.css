@@ -1,0 +1,93 @@
+.container {
+    background-color: rgb(93, 58, 192);
+    border-radius: 10px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+  .input-gr {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 20px;
+  }
+  .input-gr input {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    outline: none;
+  }
+  .input-gr select {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    outline: none;
+  }
+  .status {
+    margin-bottom: 10px;
+  }
+  .btn-group {
+    display: flex;
+    gap: 20px;
+  }
+  .btn-add {
+    background-color: rgb(93, 168, 93);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .btn-clear {
+    background-color: rgb(221, 30, 46);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .work {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #f2f2f4;
+    margin: 20px 0;
+    padding: 0 5px;
+    border-radius: 10px;
+  }
+  .btn-re,
+  .btn-del {
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+  }
+  .btn-re:hover {
+    background-color: #e7e970;
+  }
+  .btn-del:hover {
+    background-color: red;
+  }
+  .work-now {
+    background-color: #943476;
+    padding: 5px 20px;
+    border-radius: 20px;
+  }
+  label {
+      cursor: pointer;
+  }
+  
+  
+  .list_todo .box_todo {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  button {
+    cursor: pointer;
+  }

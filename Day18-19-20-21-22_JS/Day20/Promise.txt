@@ -1,0 +1,42 @@
+ Cv 1:5s
+Cv2 :2s
+Cv 3 :0s
+Cv 4 :3s
+Khi đồng bộ sẽ mất 10s để có thể xử lý hết các công việc 
+ dể kiểm soát và xử lý khi xảy ra lỗi ==>Không hay do chạy theo thứ nên các trạng thái chờ các lệnh chờ lâu làm ảnh hưởng đến các lệnh khác 
+khi sử dụng bất đồng bộ cv nào có tg ngắn nhất sẽ chạy đấu tiên sẽ mất có 5s thôi tối ưu được sức mạnh của hệ thống giảm tg chờ  ==> không tốt không phải hệ thống nào cũng đung bất đồng bộ được , khó làm quen , không phải hệ thống nào cũng sử dụng được
+
+
+fetch  giúp code API khi 
+
+//Call Stack : giúp xử lí những tác vụ đồng bộ 
+// Web Apis : giúp cho bạn xử lí những tác vụ bất đồng bộ 
+//CallBack queue : hàng chờ
+// event loop : đưa các công việc trong  hàng chờ , cho  Call Stack xử lý 
+// khi Call Stack tác vụ xử lý  
+// ASYNC/AWAIT ( CỦA ES6)
+// callback hell là tình tràn các hàm callback lồng vào nhay ở quá nhiều tầng 
+// =============XỬ LÝ BẤT ĐÒNG BỘ BẰNG PROMISE =======//
+// nếu thành công nó sẽ làm một công việc nào đó và trả về .then
+// nếu thất bại sẽ làm một công việc nào đó và trả về .catch
+// CÓ 3 TRẠNG THÁI 
+// Pending(đang chờ) : Trạng thái mặc định khi Promise được tạo ra. Tức là công việc bất đồng bộ vẩn chưa hoàn tất .
+
+// Fulfilled (Hoàn Thành ): Thái thái khi công việc bất động bộ đã hoàn tất thành công và trả về một giá trị (succeeded)
+
+//Rejected (Từ Chối): Trạng Thái khi công việc bất đồng bộ đã thất bại và trả về một lỳ do ( error).
+
+// Tóm lại Promise giúp bạn quản lý các tác vụ bất đồng bộ , cho phép bạn thực hiện 
+//các hành đồn khi tác vụ hoàn thành và thất bạn giúp mã nguồn dể đọc 
+// vào bảo trì hơn
+
+//=====API=====//
+// bên phía be sẽ cung cấp cho fe một api 
+// một số giao thức được sử dụng nhiều : GET, POST, DELETE,PATCH
+// GET: LẤY DỮ LIỆU TỪ MÁY CHỦ (không có tác dụng phụ đến dữ liệu )
+// POST: Tạo tài nguyên mới, đẩy thông tin 
+// PUT : Cập Nhật một tài nguyên hiện có trên máy chủ (thay thế hoàn toàn tài nguyên hiện tại)
+// DELETE : Xóa một tài nguyên trên máy chủ 
+// PATCH : Cập nhật mội phần của tài nguyên hiện co trên máy chủ .
+
+// nếu đang là pending cứ .then thêm một cái nữa 
