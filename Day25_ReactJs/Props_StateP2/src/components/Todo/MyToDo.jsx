@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 const MyToDo = () => {
   const [valTitle, setValTitle] = useState("");
-  const [todos,setTodos] = useState([])
+  const [todos,setTodos] = useState([]);
   const handleChange = (e) => {
     const value = e.target.value;
     setValTitle(value);
