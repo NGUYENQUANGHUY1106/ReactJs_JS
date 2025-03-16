@@ -1,1 +1,45 @@
 @import "tailwindcss";
+.btn-anserw:nth-last-child(4)
+{
+    width: 350px;
+    background-color: green;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    padding: 3px;
+    border-radius: 10px;
+}
+.btn-anserw:nth-last-child(3)
+{
+    width: 350px;
+    background-color: red;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    padding: 3px;
+    border-radius: 10px;
+}
+.btn-anserw:nth-last-child(2)
+{
+    width: 350px;
+    background-color: blue;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    padding: 3px;
+    border-radius: 10px;
+}
+.btn-anserw:nth-last-child(1)
+{
+    width: 350px;
+    background-color: rgb(209, 59, 84);
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    padding: 3px;
+    border-radius: 10px;
+}
+.btn-anserw:hover
+{
+    opacity: 0.7;
+}
