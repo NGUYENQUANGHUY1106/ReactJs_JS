@@ -1,0 +1,21 @@
+một component có ba giai đoạn chính
+1.Mounting khi lần đầu tiên component sẽ được sử dụn và render với các thông tin ban đầu 
+2.Updating khio các component đã đang được sử dụng và được update bởi các yếu tố nào đó như prop,state,url 
+3.Unmounting khi component chuẩn bị được hủy và xóa khỏi cây DOM
+
+có hai cách viết 
+class components cũ 
+function component dùng bây giờ 
+UseEffect là một công cụ react giúp ta viết các logic tại những giai đoạn nhất định trong vòng đời củ mọt component
+  useEffect(() =>{
+    // login code
+    return () => {
+
+    }
+  } ,[]) Cú Pháp đầy đủ nhất của useEffect
+
+**** Denpendencies
+1.Không có Denpendencies  thì sẽ chạy liên tục nếu không cẩn thận có thể chạy vô hạn 
+2. nếu có Denpendencies thì sẽ chạy 1 lần giá trị
+3. nếu Denpendencies có giá trị , thì khi mà giá trị thay đổi thì  function trong
+useEffect dẽ được thực thi lại 
