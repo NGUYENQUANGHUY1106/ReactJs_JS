@@ -10,10 +10,10 @@ const LifecyleExample = () => {
     // call API
     // return () =>
     // {
-      console.log("Render Components");
+     
     //   setCount(count +1);
     // }
-  },[count])
+  },[])
   return (
     <>
     <div>===============================</div>
