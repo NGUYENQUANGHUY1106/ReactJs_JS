@@ -1,0 +1,10 @@
+// là một hàm tùy chọn có thể có hoặc không
+ khi mà làm việc và thao tác với các tác vụ setTimeout.Even Listener , setInterval
+ hoặc ngăn cập nhật state không cần thiết
+ giúp clear effect logic 
+ // khi giao diện biến mất khỏi màn hình unmount hoặc khi dependecy
+ // nhiệm vụ dọn rác
+ // khi có giá trị thay đổi thì clean-up mới hoạt động
+ // closure ?
+ // khi mà một biến trong một funciton và funtion này nằm trong 
+  funciton khác có xu hướng lưu trử thông tin cũ của funciton
